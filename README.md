@@ -32,7 +32,8 @@ variable "region" {
   default = "us-west-2"
 }
 ```
-1. Set your AWS environment settings in the terminal with your own credentials  
+4. Set your AWS environment settings in the terminal with your own credentials  
+  
 linux/macOS
 ```
 export AWS_ACCESS_KEY_ID=
@@ -45,21 +46,21 @@ set AWS_ACCESS_KEY_ID=
 set AWS_SECRET_ACCESS_KEY=
 set AWS_SESSION_TOKEN=
 ```
-5. Execute the Packer initialization
+6. Execute the Packer initialization
 ```
 packer init .
 ```
-5. Execute the Packer initialization
+7. Execute the Packer initialization
 ```
 packer build .
 ```
-6. You should see some of the following output
+8. You should see some of the following output
 ```
 ...
 ==> ubuntunginx.amazon-ebs.ubuntunginx: Synchronizing state of nginx.service with SysV init with /lib/systemd/systemd-sysv-install...
 ==> ubuntunginx.amazon-ebs.ubuntunginx: Executing /lib/systemd/systemd-sysv-install enable nginx
 ...
 ```
-7. You should see the AMI now under the AWS AMI Management page  
+9. You should see the AMI now under the AWS AMI Management page  
 ![](media/2021-10-19-11-48-34.png)  
 
