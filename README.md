@@ -1,6 +1,6 @@
-# Create an AMI image on AWS with Packer
+# Create an AMI on AWS with Packer
 
-This repository describes the steps to create an AWS AMI image using Packer. In this example the AMI image will be an Ubuntu image with nginx installed and enabled. 
+This repository describes the steps to create an AWS image using Packer. In this example the AMI will be an Ubuntu image with nginx installed and enabled. 
 
 # Prerequisites
 
@@ -60,6 +60,6 @@ packer build .
 ==> ubuntunginx.amazon-ebs.ubuntunginx: Executing /lib/systemd/systemd-sysv-install enable nginx
 ...
 ```
-7. You should see the image now under the AWS AMI Management page  
+7. You should see the AMI now under the AWS AMI Management page  
 ![](media/2021-10-19-11-48-34.png)  
 
