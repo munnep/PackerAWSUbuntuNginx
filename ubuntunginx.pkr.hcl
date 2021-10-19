@@ -36,13 +36,9 @@ build {
 
   provisioner "shell" {
      inline = [
-      "sleep 30",
-      "echo updating system",
       "sudo apt-get update",
-      "echo install nginx",
       "sudo apt-get install -y nginx",
       "sudo systemctl enable nginx",
-      "sudo systemctl start nginx"
     ]
   }
 }
