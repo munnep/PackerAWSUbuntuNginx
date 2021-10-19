@@ -46,21 +46,21 @@ set AWS_ACCESS_KEY_ID=
 set AWS_SECRET_ACCESS_KEY=
 set AWS_SESSION_TOKEN=
 ```
-6. Execute the Packer initialization
+5. Execute the Packer initialization
 ```
 packer init .
 ```
-7. Execute the Packer initialization
+6. Execute the Packer initialization
 ```
 packer build .
 ```
-8. You should see some of the following output
+7. You should see some of the following output
 ```
 ...
 ==> ubuntunginx.amazon-ebs.ubuntunginx: Synchronizing state of nginx.service with SysV init with /lib/systemd/systemd-sysv-install...
 ==> ubuntunginx.amazon-ebs.ubuntunginx: Executing /lib/systemd/systemd-sysv-install enable nginx
 ...
 ```
-9. You should see the AMI now under the AWS AMI Management page  
+8. You should see the AMI now under the AWS AMI Management page  
 ![](media/2021-10-19-11-48-34.png)  
 
